@@ -1,0 +1,32 @@
+{
+  "name": "gulp-wechat-weapp-src-alisa",
+  "version": "1.0.0",
+  "description": "Gulp plugin that lets you create custom aliases for wecaht weapp  with an @alias rule.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MaelWeb/gulp-wechat-weapp-src-alisa.git"
+  },
+  "keywords": [
+    "gulp",
+    "wechat",
+    "weapp",
+    "alisa",
+    "path",
+    "src"
+  ],
+  "author": "Mael.Lia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MaelWeb/gulp-wechat-weapp-src-alisa/issues"
+  },
+  "homepage": "https://github.com/MaelWeb/gulp-wechat-weapp-src-alisa#readme",
+  "dependencies": {
+    "css-aliases": "^1.1.9",
+    "gulp-util": "^3.0.8",
+    "through2": "^3.0.0"
+  }
+}
