@@ -38,6 +38,7 @@ module.exports = function alias(options, content, _filePath) {
     switch (path.extname(_filePath)) {
         case '.js':
         case '.wxs':
+        case '.ts':
             content = content.replace(JS_IMPORT_FROM, replaceCallback);
             content = content.replace(JS_IMPORT, replaceCallback);
             content = content.replace(REQUIRE_REGEX, replaceCallback);
