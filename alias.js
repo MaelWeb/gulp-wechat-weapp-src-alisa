@@ -23,7 +23,7 @@ function replaceCallback(match, subMatch) {
         const url = path.join(opt[key], subMatch.slice(subMatch.indexOf('/')));
         return match.replace(
             subMatch,
-            path.relative(filePath, url).replace(/\\/g, '/').replace(/^\.\.\//, ''),
+            path.relative(filePath, url).replace(/\\/g, '/').replace(/^\.\.\//, '')
         );
     } else {
         return match;
