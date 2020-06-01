@@ -8,7 +8,7 @@ module.exports = function (options) {
             return cb(null, file);
         }
         if (file.isStream()) {
-            return cb(new gutil.PluginError('gulp-path-alias', 'stream not supported'));
+            return cb(new gutil.PluginError('gulp-wechat-weapp-src-alisa', 'stream not supported'));
         }
         let content = file.contents.toString('utf8');
         content = alias(options, content, file.path);
