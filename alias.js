@@ -19,7 +19,8 @@ function setKeysPatten(options) {
 
 function replaceCallback(match, subMatch) {
     if (keysPattern.test(subMatch)) {
-        const key = subMatch.substr(0, subMatch.indexOf('/'));
+        const indexEnd = subMatch.indexOf('/') === -1 ? subMatch.length : subMatch.indexOf('/');
+        const key = subMatch.substring(0, indexEnd);
         const url = path.join(opt[key], subMatch.slice(subMatch.indexOf('/')));
         return match.replace(
             subMatch,
