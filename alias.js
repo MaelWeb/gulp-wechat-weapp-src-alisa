@@ -21,6 +21,9 @@ function replaceCallback(match, subMatch) {
     if (keysPattern.test(subMatch)) {
         const indexEnd = subMatch.indexOf('/') === -1 ? subMatch.length : subMatch.indexOf('/');
         const key = subMatch.substring(0, indexEnd);
+        if (!opt[key]) {
+            return match;
+        }
         const url = path.join(opt[key], subMatch.slice(indexEnd));
         return match.replace(
             subMatch,
