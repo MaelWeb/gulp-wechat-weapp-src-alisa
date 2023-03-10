@@ -4,7 +4,7 @@
       src="https://upload.wikimedia.org/wikipedia/commons/7/72/Gulp.js_Logo.svg">
   </a>
   <h1>Gulp Wechat Weapp Src Alisa</h1>
-  <p>Gulp plugin that lets you create custom aliases for wecaht weapp  with an @alias rule. Supports  `.wxml`, `.wxss(less|scss)`, `.js` and `.wxs` file.</p>
+  <p>Gulp plugin that lets you create custom aliases for wecaht weapp  with an @alias rule. Supports  `.wxml`, `.wxss(less|scss)`, `.js(`ts|wxs`)` and `.json` file.</p>
 </div>
 
 <h2 align="center">Install</h2>

@@ -1,6 +1,6 @@
 {
   "name": "gulp-wechat-weapp-src-alisa",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Gulp plugin that lets you create custom aliases for wecaht weapp  with an @alias rule.",
   "main": "index.js",
   "scripts": {
@@ -30,6 +30,8 @@
     "through2": "^3.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/register": "^7.21.0",
     "gulp": "^4.0.2",
     "gulp-less": "^4.0.1",
     "less-import-aliases": "^1.0.2"
