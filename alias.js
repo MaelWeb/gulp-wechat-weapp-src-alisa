@@ -24,7 +24,6 @@ function replaceCallback(match, subMatch) {
   if (keysPattern.test(subMatch)) {
     const indexEnd = subMatch.indexOf("/") === -1 ? subMatch.length : subMatch.indexOf("/");
     const key = subMatch.substring(0, indexEnd);
-    console.log("🔥 ~ file: alias.js:24 ~ replaceCallback ~ key:", key);
     if (!opt[key]) {
       return match;
     }
